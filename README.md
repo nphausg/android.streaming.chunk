@@ -1,4 +1,4 @@
-<h1 align="center"> :robot: Android Compose Navigation Inclusive Demo </h1>
+<h1 align="center"> :robot: Android Streaming with Chunked Demo </h1>
 
 <div align="center">
     <img src="https://img.shields.io/badge/kotlin-v1.9.0-blue.svg">
@@ -13,17 +13,15 @@
 
 ## 👉 Overview
 
-Android Jetpack Compose has revolutionized how we build UI in Android applications, providing a modern, concise, and powerful approach. One essential aspect of building any non-trivial app is handling navigation between different screens. Jetpack Compose's Navigation component provides a declarative way to handle navigation, offering features like navigation graphs and back stack management.
-One useful feature in Jetpack Compose Navigation is the inclusive attribute. Understanding when and how to use this attribute can help create more intuitive and user-friendly navigation experiences.
-In this article, we'll explore what the inclusive attribute means, how it works, and look at practical examples of its usage in real-world applications.
+In this example, we'll use Ktor to serve a audio/ video file using chunked streaming. This approach allows the client to start playing the video while the remaining parts are still being downloaded.
 
 ## 🚀 How to use
 
 Cloning the repository into a local directory and checkout the desired branch:
 
 ```
-git@github.com:nphausg/android.compose.navigation.inclusive.git
-cd android.compose.navigation.inclusive
+git@github.com:nphausg/android.streaming.chunked.git
+cd android.streaming.chunked
 git checkout master
 ```
 

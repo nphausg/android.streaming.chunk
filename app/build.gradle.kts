@@ -43,8 +43,11 @@ android {
         kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
+        jniLibs {
+            excludes.addAll(listOf("META-INF/*", "META-INF/licenses/*"))
+        }
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes.addAll(listOf("META-INF/*", "META-INF/licenses/*", "**/attach_hotspot_windows.dll"))
         }
     }
 }
