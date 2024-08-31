@@ -47,7 +47,13 @@ android {
             excludes.addAll(listOf("META-INF/*", "META-INF/licenses/*"))
         }
         resources {
-            excludes.addAll(listOf("META-INF/*", "META-INF/licenses/*", "**/attach_hotspot_windows.dll"))
+            excludes.addAll(
+                listOf(
+                    "META-INF/*",
+                    "META-INF/licenses/*",
+                    "**/attach_hotspot_windows.dll"
+                )
+            )
         }
     }
 }
@@ -62,11 +68,20 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-    // Ktor
-    implementation("io.ktor:ktor-server-core:2.3.4")
-    implementation("io.ktor:ktor-server-netty:2.3.4")
-    implementation("io.ktor:ktor-server-content-negotiation:2.3.4")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.4")
+    // Ktor Server
+    implementation("io.ktor:ktor-server-core:2.3.10")
+    implementation("io.ktor:ktor-server-netty:2.3.10")
+    implementation("io.ktor:ktor-server-content-negotiation:2.3.10")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.10")
+    implementation("io.ktor:ktor-server-cors:2.3.10")
+    implementation("io.ktor:ktor-server-call-logging:2.3.10")
+    implementation("io.ktor:ktor-server-default-headers:2.3.10")
+    // Ktor Client
+    implementation("io.ktor:ktor-client-cio:2.3.10")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.10")
+
+    // Exoplayer
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
 
     // Test
     testImplementation(libs.junit)
