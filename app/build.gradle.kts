@@ -71,17 +71,21 @@ dependencies {
     // Ktor Server
     implementation("io.ktor:ktor-server-core:2.3.10")
     implementation("io.ktor:ktor-server-netty:2.3.10")
+    implementation("io.ktor:ktor-server-cors:2.3.10")
     implementation("io.ktor:ktor-server-content-negotiation:2.3.10")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.10")
-    implementation("io.ktor:ktor-server-cors:2.3.10")
+    implementation("io.ktor:ktor-server-host-common:2.3.10")
     implementation("io.ktor:ktor-server-call-logging:2.3.10")
     implementation("io.ktor:ktor-server-default-headers:2.3.10")
     // Ktor Client
     implementation("io.ktor:ktor-client-cio:2.3.10")
     implementation("io.ktor:ktor-client-content-negotiation:2.3.10")
-
+    implementation("io.ktor:ktor-utils:2.3.10")
     // Exoplayer
+    implementation("androidx.media3:media3-ui:1.4.1")
     implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-common:1.4.1")
+    implementation("androidx.media3:media3-session:1.4.1")
 
     // Test
     testImplementation(libs.junit)
